@@ -1,5 +1,5 @@
 /*This code performs operations of user choice on a stack
-  An array is used to make the stack*/
+  An array is used to construct the stack*/
 #include<stdio.h>
 
 #define MAX_SIZE 10
