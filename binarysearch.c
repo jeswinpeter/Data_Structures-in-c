@@ -7,7 +7,7 @@ and searches for a number input by the user in the array(using binary search)*/
     int A[20];  //Array used to take values
     int i;      //Variable incremented in for loop 
     int j;      //Variable incremented in for loop
-    int temp;   //Temporary variable used to swap 2 array elements in buble sort loop (line -> 19 to 31)
+    int temp;   //Temporary variable used to swap 2 array elements in buble sort loop (line -> 21 to 33)
  printf("Enter the size of Array: ");
  scanf("%d",&n);
 //loop to construct array
@@ -24,7 +24,7 @@ and searches for a number input by the user in the array(using binary search)*/
       {
         if(A[j]>A[j+1])
         {
-            //Code to swap 2 adjacent elements of an array (line -> 26 to 28 ) 
+            //Code to swap 2 adjacent elements of an array (line -> 28 to 30 ) 
             temp = A[j];
             A[j]=A[j+1];
             A[j+1]=temp;
