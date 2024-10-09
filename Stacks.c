@@ -6,6 +6,7 @@
 
 int stack[MAX_SIZE];
 int top = -1;
+
 //Stack function push(line 10 to 18), used to add element to the top of the stack
 void push(int value) {
     if(top == MAX_SIZE){
@@ -16,6 +17,7 @@ void push(int value) {
         printf("%d is pushed into the stack\n ",value);
     }
 }
+
 //Stack function pop(line 20 to 30), used to remove element from the top of the stack
 int pop() {
     if(top < 0) {
@@ -28,6 +30,7 @@ int pop() {
         return value;
     }
 }
+
 //Stack function display(line 32 to 43), used to print the stack
 void display() {
      if(top < 0) {
@@ -41,10 +44,12 @@ void display() {
         printf("\n");
     }
 }
+
 //Construction and operations on stack(line 45 to 76)
 int main() {
     int option;     //Variable to store the choice they make
     int element;    //Stores the value that is being pushed to the stack
+    
     while (1) {
         printf("The operations that can be performed on a stack are listed below :\n");
         printf("1 -> Push\n");
