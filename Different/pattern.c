@@ -1,3 +1,11 @@
+/*
+    this code prints a specific patter using numbers
+    if you enter 2 the output will be: 2 2 2 
+                                       2 1 2
+                                       2 2 2
+
+*/
+
 #include<stdio.h>
 
 void main() {

@@ -1,3 +1,4 @@
+/* This code takes a string whith numbers and prints the frequency of a digit */
 #include<stdio.h>
 #include<string.h>
 
