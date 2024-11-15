@@ -37,16 +37,16 @@ aray[end] = temp;
 
 void quick_sort(int aray[],int lower,int upper) {
     if(lower < upper) {
-        locate = partition(&aray[size],lower,upper); 
-        quick_sort(&aray[size], lower, locate-1);
-        quick_sort(&aray[size], locate+1, upper);
+        locate = partition(aray,lower,upper); 
+        quick_sort(aray, lower, locate-1);
+        quick_sort(aray, locate+1, upper);
     }
 }
 
 void main() {
     printf("Enter size of array: ");
     scanf("%d",&size);
-    upper = size;
+    upper = size - 1;
     
 //loop to construct array
     for(int i = 0; i < size; i++) {
@@ -61,10 +61,10 @@ void main() {
     }
     printf("\n--------- Unsorted ----------\n\n");
 
-quick_sort(&aray[size], lower, upper);
+quick_sort(aray, lower, upper);
 
 //loop to print the sorted array
-    printf("--------- Sorted ----------\n");
+    printf("\n--------- Sorted ----------\n");
     for (int i = 0; i < size; i++) {
         printf("%d\t",aray[i]);
     }

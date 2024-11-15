@@ -1,3 +1,6 @@
+/* This program tokenizes a string and stores them in an array
+    Then Sorts the array of tokens using Bubble sort */
+
 #include<stdio.h>
 #include<string.h>
 
